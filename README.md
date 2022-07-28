@@ -6,7 +6,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">Example of backend on a progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework <a href="http://nestjs.org" target="_blank">nestj</a> and GraphQL server <a href="https://www.apollographql.com/" target="_blank">Apollo</a>.</p>
+  <p align="center">Example of backend on a progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework <a href="http://nestjs.org" target="_blank">Nestjs</a> and GraphQL server <a href="https://www.apollographql.com/" target="_blank">Apollo</a>.</p>
     <p align="center">
 
 
