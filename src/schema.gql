@@ -1,0 +1,54 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Запись телефонной книги"""
+type Phone {
+  """Уникальный идентификатор записи"""
+  id: ID!
+
+  """Номер телефона"""
+  number: String!
+
+  """Имя владельца телефона """
+  name: String!
+
+  """Адресс владельца телефона """
+  address: String
+}
+
+type Query {
+  phones: [Phone!]!
+  phone(id: String!): Phone!
+}
+
+type Mutation {
+  createPhone(createPhoneInput: CreatePhoneInput!): Phone!
+  updatePhone(updatePhoneInput: UpdatePhoneInput!): Phone!
+  removePhone(id: String!): Phone!
+}
+
+input CreatePhoneInput {
+  """Номер телефона"""
+  number: String!
+
+  """Имя владельца телефона """
+  name: String!
+
+  """Адресс владельца телефона """
+  address: String!
+}
+
+input UpdatePhoneInput {
+  """Номер телефона"""
+  number: String
+
+  """Имя владельца телефона """
+  name: String
+
+  """Адресс владельца телефона """
+  address: String
+
+  """ID редактируемой записи"""
+  id: String!
+}
