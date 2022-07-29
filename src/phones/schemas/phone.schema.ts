@@ -1,14 +1,9 @@
-import { Field, InputType, ObjectType, ID } from '@nestjs/graphql';
+import { Field, ObjectType, ID } from '@nestjs/graphql';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { IsNotEmpty, IsString, MaxLength } from 'class-validator';
 
-import { Schema as MongooseSchema } from 'mongoose';
-
-MongooseSchema.Types.String.set('trim', true);
-
 @Schema()
 @ObjectType()
-
 export class Phone {
     @Field(() => ID, { description: 'Уникальный идентификатор записи' })
     readonly id: String;

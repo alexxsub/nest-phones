@@ -13,8 +13,6 @@ exports.PhoneSchema = exports.Phone = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const mongoose_1 = require("@nestjs/mongoose");
 const class_validator_1 = require("class-validator");
-const mongoose_2 = require("mongoose");
-mongoose_2.Schema.Types.String.set('trim', true);
 let Phone = class Phone {
 };
 __decorate([

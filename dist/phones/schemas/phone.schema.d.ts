@@ -20,12 +20,12 @@
 /// <reference types="mongoose/types/types" />
 /// <reference types="mongoose/types/utility" />
 /// <reference types="mongoose/types/validation" />
+/// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
-import { Schema as MongooseSchema } from 'mongoose';
 export declare class Phone {
     readonly id: String;
     number: string;
     name: string;
     address: string;
 }
-export declare const PhoneSchema: MongooseSchema<Phone, import("mongoose").Model<Phone, any, any, any, any>, {}, {}, any, {}, "type", Phone>;
+export declare const PhoneSchema: import("mongoose").Schema<Phone, import("mongoose").Model<Phone, any, any, any, any>, {}, {}, any, {}, "type", Phone>;
