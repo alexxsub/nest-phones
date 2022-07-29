@@ -2,7 +2,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-"""Запись телефонной книги"""
 type Phone {
   """Уникальный идентификатор записи"""
   id: ID!
@@ -30,13 +29,13 @@ type Mutation {
 
 input CreatePhoneInput {
   """Номер телефона"""
-  number: String!
+  number: String
 
   """Имя владельца телефона """
-  name: String!
+  name: String = "unknown"
 
   """Адресс владельца телефона """
-  address: String!
+  address: String
 }
 
 input UpdatePhoneInput {
@@ -44,7 +43,7 @@ input UpdatePhoneInput {
   number: String
 
   """Имя владельца телефона """
-  name: String
+  name: String = "unknown"
 
   """Адресс владельца телефона """
   address: String

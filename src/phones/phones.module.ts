@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { PhonesService } from './phones.service';
 import { PhonesResolver } from './phones.resolver';
-import { Phone, PhoneSchema } from './schemas/phone.chema';
+import { Phone, PhoneSchema } from './schemas/phone.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
@@ -10,4 +10,4 @@ import { MongooseModule } from '@nestjs/mongoose';
   ],
   providers: [PhonesResolver, PhonesService],
 })
-export class PhonesModule {}
+export class PhonesModule { }

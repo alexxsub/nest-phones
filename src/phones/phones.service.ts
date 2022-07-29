@@ -8,13 +8,13 @@ import { UpdatePhoneInput } from './dto/update-phone.input';
 
 import { Model } from 'mongoose';
 
-import { Phone, PhoneDocument } from './schemas/phone.chema';
+import { Phone } from './schemas/phone.schema';
 
 @Injectable()
 export class PhonesService {
   constructor(
-    @InjectModel(Phone.name) private phoneModel: Model<PhoneDocument>,
-  ) {}
+    @InjectModel(Phone.name) private phoneModel: Model<Phone>,
+  ) { }
 
   async create(createPhoneInput: CreatePhoneInput): Promise<Phone> {
     const createdPhone = new this.phoneModel(createPhoneInput);

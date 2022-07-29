@@ -14,6 +14,7 @@ async function bootstrap() {
       },
     }),
   );
-  await app.listen(3000, 'localhost');
+  await app.listen(3001, 'localhost');
 }
 bootstrap();
+//sudo netstat -lntup | grep ":3000"

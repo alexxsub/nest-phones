@@ -1,13 +1,14 @@
 import { NotFoundException } from '@nestjs/common';
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { PhonesService } from './phones.service';
-import { Phone } from './entities/phone.entity';
+//import { Phone } from './entities/phone.entity';
+import { Phone } from './schemas/phone.schema'
 import { CreatePhoneInput } from './dto/create-phone.input';
 import { UpdatePhoneInput } from './dto/update-phone.input';
 
 @Resolver(() => Phone)
 export class PhonesResolver {
-  constructor(private readonly phonesService: PhonesService) {}
+  constructor(private readonly phonesService: PhonesService) { }
 
   @Mutation(() => Phone)
   createPhone(@Args('createPhoneInput') createPhoneInput: CreatePhoneInput) {
