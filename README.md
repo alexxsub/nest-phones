@@ -14,8 +14,8 @@
 ## Description
 
 Type Script example API backend for CRUD operations for phonebook.
-# Stack: typescript,nestjs,graphql,apollo,mongodb
-# branch mapped_types have been edited for example of  https://docs.nestjs.com/graphql/mapped-types#mapped-types
+### Stack: typescript,nestjs,graphql,apollo,mongodb
+### branch mapped_types have been edited for example of  https://docs.nestjs.com/graphql/mapped-types#mapped-types
 
 ## Installation
 
