@@ -1,5 +1,4 @@
 import { PhonesService } from './phones.service';
-import { Phone } from './schemas/phone.schema';
 import { CreatePhoneInput } from './dto/create-phone.input';
 import { UpdatePhoneInput } from './dto/update-phone.input';
 export declare class PhonesResolver {
