@@ -13,7 +13,7 @@ async function bootstrap() {
             enableImplicitConversion: true,
         },
     }));
-    await app.listen(3001, 'localhost');
+    await app.listen(3000, 'localhost');
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
