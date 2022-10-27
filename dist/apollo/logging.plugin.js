@@ -8,15 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LoggingPlugin = void 0;
 const apollo_1 = require("@nestjs/apollo");
+const common_1 = require("@nestjs/common");
 let LoggingPlugin = class LoggingPlugin {
     async serverWillStart() {
-        console.log('🚀 Started Apollo!');
+        common_1.Logger.debug(`🚀 Started Apollo!`, 'ApolloClass');
     }
     async requestDidStart() {
         return {
             async willSendResponse(ctx) {
                 if (ctx.operationName != 'IntrospectionQuery')
-                    console.log(ctx.request.query);
+                    common_1.Logger.debug(ctx.request.query, 'Context');
             },
         };
     }

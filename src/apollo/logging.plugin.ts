@@ -1,4 +1,5 @@
 import { Plugin } from '@nestjs/apollo';
+import { Module,Logger } from '@nestjs/common';
 import {
   ApolloServerPlugin,
   GraphQLRequestListener,
@@ -9,17 +10,16 @@ import {
 @Plugin()
 export class LoggingPlugin implements ApolloServerPlugin {
   async serverWillStart() {
-    console.log('🚀 Started Apollo!');
+    Logger.debug(`🚀 Started Apollo!`,'ApolloClass');
   }
 
   async requestDidStart(): Promise<GraphQLRequestListener> {
-    // console.log('Request started');
     return {
       async willSendResponse(
         ctx: GraphQLRequestContextWillSendResponse<BaseContext>,
       ) {
         if (ctx.operationName != 'IntrospectionQuery')
-          console.log(ctx.request.query);
+          Logger.debug(ctx.request.query,'Context');
       },
     };
   }

@@ -18,6 +18,7 @@ const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
 const phone_schema_1 = require("./schemas/phone.schema");
 let PhonesService = class PhonesService {
+    phoneModel;
     constructor(phoneModel) {
         this.phoneModel = phoneModel;
     }

@@ -20,6 +20,7 @@ const phone_schema_1 = require("./schemas/phone.schema");
 const create_phone_input_1 = require("./dto/create-phone.input");
 const update_phone_input_1 = require("./dto/update-phone.input");
 let PhonesResolver = class PhonesResolver {
+    phonesService;
     constructor(phonesService) {
         this.phonesService = phonesService;
     }

@@ -14,6 +14,7 @@ const create_phone_input_1 = require("./create-phone.input");
 const graphql_1 = require("@nestjs/graphql");
 const class_validator_1 = require("class-validator");
 let UpdatePhoneInput = class UpdatePhoneInput extends (0, graphql_1.PartialType)(create_phone_input_1.CreatePhoneInput) {
+    id;
 };
 __decorate([
     (0, graphql_1.Field)({ nullable: false, description: 'ID редактируемой записи' }),

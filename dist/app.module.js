@@ -10,6 +10,7 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const apollo_module_1 = require("./apollo/apollo.module");
 const database_module_1 = require("./database/database.module");
+const config_module_1 = require("./config/config.module");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const phones_module_1 = require("./phones/phones.module");
@@ -18,7 +19,7 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [database_module_1.DatabaseModule, apollo_module_1.ApolloModule, phones_module_1.PhonesModule],
+        imports: [config_module_1.ConfigurationModule, database_module_1.DatabaseModule, apollo_module_1.ApolloModule, phones_module_1.PhonesModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService, logging_plugin_1.LoggingPlugin],
     })

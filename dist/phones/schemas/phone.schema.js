@@ -14,6 +14,10 @@ const graphql_1 = require("@nestjs/graphql");
 const mongoose_1 = require("@nestjs/mongoose");
 const class_validator_1 = require("class-validator");
 let Phone = class Phone {
+    id;
+    number;
+    name;
+    address;
 };
 __decorate([
     (0, graphql_1.Field)(() => graphql_1.ID, { description: 'Уникальный идентификатор записи' }),

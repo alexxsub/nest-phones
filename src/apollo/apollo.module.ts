@@ -1,4 +1,5 @@
-import { Module } from '@nestjs/common';
+import { Module,Logger } from '@nestjs/common';
+
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
@@ -13,7 +14,7 @@ import { join } from 'path';
       plugins: [
         {
           async serverWillStart() {
-            console.log('🚀 Started Apollo!');
+            Logger.debug(`🚀 Started Apollo!`,'ApolloPlugin');
           },
         },
       ],

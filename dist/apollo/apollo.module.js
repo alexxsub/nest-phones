@@ -24,7 +24,7 @@ ApolloModule = __decorate([
                 plugins: [
                     {
                         async serverWillStart() {
-                            console.log('🚀 Started Apollo!');
+                            common_1.Logger.debug(`🚀 Started Apollo!`, 'ApolloPlugin');
                         },
                     },
                 ],
