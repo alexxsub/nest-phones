@@ -18,8 +18,6 @@ Type Script example API backend for CRUD operations for phonebook.
 
 <a href="https://docs.docker.com/engine/install/" target="_blank">To install docker engine</a>
 
-edit .env for your environment
-
 ```bash
 #clone git repository
 https://github.com/alexxsub/nest-phones.git
@@ -29,6 +27,22 @@ https://github.com/alexxsub/nest-phones.git
 #install dependencies
 npm i
 ```
+
+```bash
+#copy .env from example
+cp .env.example .env
+```
+
+edit .env for your environment
+
+NODE_ENV="development" - nodejs environment
+ORIGIN="http://localhost" - for CORS
+PORT="3000"  - port API
+DB_HOST="localhost:27017" - mongodb host and port
+DB_USER="admin"  -mongodb user
+DB_PASSWORD=""   -mongodb user password
+DB_name="nestphones" - DB name
+SERVICE="api" - name service in URL, for example <http://localhost/api>
 
 ## Running the app
 
