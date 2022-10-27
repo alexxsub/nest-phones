@@ -36,14 +36,15 @@ cp .env.example .env
 edit .env for your environment
 
 ```bash
-NODE_ENV="development" - nodejs environment
-ORIGIN="http://localhost" - for CORS
-PORT="3000"  - port API
-DB_HOST="localhost:27017" - mongodb host and port
-DB_USER="admin"  -mongodb user
-DB_PASSWORD=""   -mongodb user password
-DB_name="nestphones" - DB name
-SERVICE="api" - name service in URL, for example <http://localhost/api>
+NODE_ENV="development" # nodejs environment
+ORIGIN="http://localhost" # for CORS
+PORT="3000"  # port API
+SERVICE="api" # name service in URL, for example <http://localhost/api>
+DB_HOST="localhost:27017" # mongodb host and port
+DB_USER="admin"  #mongodb user
+DB_PASSWORD=""   #mongodb user password
+DB_name="nestphones" #DB name
+
 ```
 
 ## Running the app
