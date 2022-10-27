@@ -3,40 +3,54 @@
   <a href='https://www.apollographql.com/'><img src='https://user-images.githubusercontent.com/841294/53402609-b97a2180-39ba-11e9-8100-812bab86357c.png' height='100' alt='Apollo Server'></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
   <p align="center">Example of backend on a progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework <a href="http://nestjs.org" target="_blank">Nestjs</a> and GraphQL server <a href="https://www.apollographql.com/" target="_blank">Apollo</a>.</p>
     <p align="center">
-
-
 
 ## Description
 
 Type Script example API backend for CRUD operations for phonebook.
+
 ### Stack: typescript,nestjs,graphql,apollo,mongodb
-### branch mapped_types has been edited for example of  https://docs.nestjs.com/graphql/mapped-types#mapped-types
+
+### branch mapped_types has been edited for example of  <https://docs.nestjs.com/graphql/mapped-types#mapped-types>
 
 ## Installation
 
+<a href="https://docs.docker.com/engine/install/" target="_blank">To install docker engine</a>
+
+edit .env for your environment
+
 ```bash
-$ npm install
+#clone git repository
+https://github.com/alexxsub/nest-phones.git
+```
+
+```bash
+#install dependencies
+npm i
 ```
 
 ## Running the app
 
 ```bash
-# development
+#start mongodb docker server-container
+docker-compose up -d
+
+#stop mongo container
+docker-compose down
+
+# run app in diferent modes, see more scripts in package.json
+# development mode
 $ npm run start
 
-# watch mode
+# watch evelopment mode
 $ npm run start:dev
 
 # production mode
 $ npm run start:prod
 ```
 
-API playground http://localhost:3000/graphql
+API playground <http://localhost:3000/graphql>
 
 ## Test
 
@@ -50,5 +64,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-
