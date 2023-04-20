@@ -14,6 +14,11 @@ async function bootstrap() {
       },
     }),
   );
-  await app.listen(3000, 'localhost');
+  const HOST="localhost";
+  const PORT="3000";
+  await app.listen(3000, 'localhost',()=>{
+    console.log(`🚀 Nest server started: http://${HOST}:${PORT}`)
+    
+  });
 }
 bootstrap();
